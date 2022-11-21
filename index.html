@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <title>Atividade de Programaçao Web</title>
+</head>
+<body>
+
+    <!-- Faça, usando HTML e CSS, uma página para inserir e excluir alunos e suas notas em uma tabela (que deve exibir os alunos inseridos e suas notas), 
+        calculando a média delas usando o método calculaMedia() da classe Aluno. Use todos as técnicas de manipulação do DOM e captação de eventos estudadas em sala.
+        Envie somente o link do GitHub deste projeto FUNCIONANDO (usando o GitHub Pages). 
+        O projeto é individual. Estilize a página usando CSS de forma própria e que represente sua individualidade.-->
+
+    <header>
+        <h1 class="cabecalho">Sistema de Gerenciamento de Notas - Caderneta Virtual (SGN_CV.01)</h1>
+    </header>
+    <main>
+        <section class="section">
+            <div class="formulario_container">
+                <form action="" class="formulario">
+                    <legend class="legenda">Dados do Aluno:</legend>
+                    <label class="label">Nome:      </label><input type="text" class="nome" placeholder="Digite o nome"><br>
+                    <label class="label">Matrícula: </label><input type="text" class="matricula" placeholder="Digite a matricula"><br>
+                    <label class="label">Nota 1:    </label><input type="text" class="nota1" placeholder="_._"><br>
+                    <label class="label">Nota 2:    </label><input type="text" class="nota2" placeholder="_._"><br>
+                    <label class="label">Nota 3:    </label><input type="text" class="nota3" placeholder="_._"><br>
+                    <button type="sumbit" class="botao_submit">Inserir</button>
+                </form>
+            </div>
+            
+            <div class="lista_container" style="overflow: auto; height: 720px">
+                <div class="legenda2_container">
+                    <legend class="legenda2">Meus Alunos:</legend>
+                </div>  
+                <ul id="lista">
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Aluno: Josemo Correia Martins Júnior - RGM: 30943761</p>
+    </footer>
+
+     <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
